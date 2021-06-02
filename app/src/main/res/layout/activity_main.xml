@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_background"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/splashP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        app:srcCompat="@drawable/p" />
+
+    <ImageView
+        android:id="@+id/splashL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:layout_toEndOf="@id/splashP"
+        app:srcCompat="@drawable/l" />
+
+    <ImageView
+        android:id="@+id/splashU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:layout_toEndOf="@id/splashL"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/u" />
+
+    <ImageView
+        android:id="@+id/splashS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:layout_toEndOf="@id/splashU"
+        app:srcCompat="@drawable/s" />
+</RelativeLayout>
